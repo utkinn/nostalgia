@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Nake.csx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MoonSharp" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Sandbox.Engine">
+      <HintPath>..\..\bin\managed\Sandbox.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Game">
+      <HintPath>..\..\bin\managed\Sandbox.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.System">
+      <HintPath>..\..\bin\managed\Sandbox.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Tools">
+      <HintPath>..\..\bin\managed\Sandbox.Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
