@@ -1,6 +1,6 @@
 ﻿using MoonSharp.Interpreter;
 
-namespace Nostalgia.Core.Proxies
+namespace Nostalgia.Proxies
 {
     public class LuaRuntime : ILuaRuntime
     {

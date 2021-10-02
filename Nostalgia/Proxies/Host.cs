@@ -1,4 +1,4 @@
-﻿namespace Nostalgia.Core.Proxies
+﻿namespace Nostalgia.Proxies
 {
     internal class Host
     {

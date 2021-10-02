@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Nostalgia.Core\Nostalgia.Core.csproj" />
+    <ProjectReference Include="..\Nostalgia\Nostalgia.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Nostalgia.Core.Proxies
+namespace Nostalgia.Proxies
 {
     [System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1600:Elements should be documented", Justification = "Sandbox.BaseFileSystem proxy for testability")]
     internal class FileSystem

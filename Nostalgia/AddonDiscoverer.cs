@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using Nostalgia.Core.Proxies;
+using Nostalgia.Proxies;
 
-namespace Nostalgia.Core
+namespace Nostalgia
 {
     internal class AddonDiscoverer
     {

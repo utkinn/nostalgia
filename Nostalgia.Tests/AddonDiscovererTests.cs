@@ -4,10 +4,10 @@ using System.IO;
 using System.Text.Json;
 using FluentAssertions;
 using Moq;
-using Nostalgia.Core.Proxies;
+using Nostalgia.Proxies;
 using Xunit;
 
-namespace Nostalgia.Core.Tests
+namespace Nostalgia.Tests
 {
     public class AddonDiscovererTests
     {

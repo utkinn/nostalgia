@@ -1,6 +1,6 @@
-﻿using Nostalgia.Core.Proxies;
+﻿using Nostalgia.Proxies;
 
-namespace Nostalgia.Core
+namespace Nostalgia
 {
     internal record Addon(AddonManifest Manifest, string DirName)
     {

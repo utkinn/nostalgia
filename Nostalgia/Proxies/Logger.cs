@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Nostalgia.Core.Proxies
+namespace Nostalgia.Proxies
 {
     internal class Logger
     {

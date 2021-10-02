@@ -1,6 +1,6 @@
-﻿using Nostalgia.Core.Proxies;
+﻿using Nostalgia.Proxies;
 
-namespace Nostalgia.Core.LuaModules
+namespace Nostalgia.LuaModules
 {
     internal class RootModule
     {

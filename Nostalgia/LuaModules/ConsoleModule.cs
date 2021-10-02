@@ -1,7 +1,7 @@
 ﻿using System;
-using Nostalgia.Core.Proxies;
+using Nostalgia.Proxies;
 
-namespace Nostalgia.Core.LuaModules
+namespace Nostalgia.LuaModules
 {
     /// <summary>
     /// Implements console output functions such as <c>print</c>, <c>Msg</c> and so on.

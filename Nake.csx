@@ -16,7 +16,7 @@ using static Nake.Location;
 
 void CheckIfRepoIsPlacedCorrectly()
 {
-    if (!NakeScriptDirectory().EndsWith("sbox\\Nostalgia.Core"))
+    if (!NakeScriptDirectory().EndsWith("sbox\\Nostalgia"))
     {
         Fail("It looks like the repository is in the wrong directory. Make sure the repository is cloned at \"...\\steamapps\\common\\sbox\".");
     }
@@ -24,9 +24,9 @@ void CheckIfRepoIsPlacedCorrectly()
 
 void CopySourcesToDestinationDir()
 {
-    var exclude = new[] { "bin", "obj", "Nostalgia.Core.csproj" };
-    var coreDestinationDir = "../addons/nostalgia/code/core/";
-    DirectoryCopy("Nostalgia.Core", coreDestinationDir, exclude);
+    var exclude = new[] { "bin", "obj", "Nostalgia.csproj" };
+    var coreDestinationDir = "../addons/nostalgia/code/";
+    DirectoryCopy("Nostalgia", coreDestinationDir, exclude);
 }
 
 void DirectoryCopy(string sourceDirName, string destDirName, string[] exclude)

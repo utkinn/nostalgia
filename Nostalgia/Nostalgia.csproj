@@ -22,6 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\addons\base\code\base.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Sandbox.Engine">
       <HintPath>..\..\bin\managed\Sandbox.Engine.dll</HintPath>
     </Reference>
@@ -30,9 +34,6 @@
     </Reference>
     <Reference Include="Sandbox.System">
       <HintPath>..\..\bin\managed\Sandbox.System.dll</HintPath>
-    </Reference>
-    <Reference Include="Sandbox.Tools">
-      <HintPath>..\..\bin\managed\Sandbox.Tools.dll</HintPath>
     </Reference>
   </ItemGroup>
 

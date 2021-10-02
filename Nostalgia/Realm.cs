@@ -1,4 +1,4 @@
-﻿namespace Nostalgia.Core
+﻿namespace Nostalgia
 {
     public enum Realm
     {
