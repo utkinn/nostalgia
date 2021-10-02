@@ -8,12 +8,12 @@ namespace Nostalgia.Core
         public void Start()
         {
             var host = new Host();
-            var rootModule = new RootModule(host);
+            var logger = new Logger();
+            var rootModule = new RootModule(host, logger);
             var runtime = new LuaRuntime();
             rootModule.Init(runtime);
-
             var fs = new FileSystem();
-            var logger = new Logger();
+
             var discoverer = new AddonDiscoverer(fs, logger);
             new AddonRunner(fs, runtime, discoverer).RunAll();
         }

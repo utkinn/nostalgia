@@ -4,7 +4,7 @@ namespace Nostalgia.Core.Proxies
 {
     public class LuaRuntime : ILuaRuntime
     {
-        private readonly Script script = new ();
+        private readonly Script script = new();
 
         public Table Globals => script.Globals;
 

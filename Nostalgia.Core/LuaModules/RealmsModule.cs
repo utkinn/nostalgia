@@ -2,7 +2,7 @@
 
 namespace Nostalgia.Core.LuaModules
 {
-    internal class RealmsModule : ILuaModule
+    internal class RealmsModule
     {
         private readonly Host host;
 

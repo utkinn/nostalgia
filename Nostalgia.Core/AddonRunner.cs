@@ -2,7 +2,7 @@
 
 namespace Nostalgia.Core
 {
-    class AddonRunner
+    internal class AddonRunner
     {
         private readonly FileSystem fs;
         private readonly ILuaRuntime runtime;
