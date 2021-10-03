@@ -6,7 +6,7 @@ namespace Nostalgia
     /// <summary>
     /// Nostalgia composition root and entry point.
     /// </summary>
-    internal static class Nostalgia
+    static class Nostalgia
     {
         /// <summary>
         /// Initializes Nostalgia internal dependencies, then discovers addons and runs their autorun code.

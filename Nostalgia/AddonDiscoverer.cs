@@ -6,17 +6,29 @@ using Nostalgia.Proxies;
 
 namespace Nostalgia
 {
-    internal class AddonDiscoverer
+    /// <summary>
+    /// Discovers installed addons in <c>(Sandbox root)/data/local/nostalgia/addons</c>.
+    /// </summary>
+    class AddonDiscoverer
     {
         private readonly FileSystem fileSystem;
         private readonly Logger logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AddonDiscoverer"/> class.
+        /// </summary>
+        /// <param name="fileSystem"><see cref="FileSystem"/> instance to discover addons with.</param>
+        /// <param name="logger"><see cref="Logger"/> instance to report addon loading errors with.</param>
         public AddonDiscoverer(FileSystem fileSystem, Logger logger)
         {
             this.fileSystem = fileSystem;
             this.logger = logger;
         }
 
+        /// <summary>
+        /// Discovers installed addons in <c>(Sandbox root)/data/local/nostalgia/addons</c>.
+        /// </summary>
+        /// <returns><see cref="IEnumerable{Addon}"/> of discovered addons. Broken addons, such as those having invalid or no <c>addons.json</c>, are excluded.</returns>
         public IEnumerable<Addon> Discover()
         {
             var addons = new List<Addon>();

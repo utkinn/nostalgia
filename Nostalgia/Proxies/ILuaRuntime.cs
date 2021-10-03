@@ -2,10 +2,20 @@
 
 namespace Nostalgia.Proxies
 {
-    public interface ILuaRuntime
+    /// <summary>
+    /// <see cref="Script"/> proxy for testability.
+    /// </summary>
+    interface ILuaRuntime
     {
+        /// <summary>
+        /// Gets the table with global Lua symbols.
+        /// </summary>
         Table Globals { get; }
 
+        /// <summary>
+        /// Executes Lua code.
+        /// </summary>
+        /// <param name="code">Lua code to execute.</param>
         void DoString(string code);
     }
 }

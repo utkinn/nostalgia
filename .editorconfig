@@ -7,3 +7,6 @@ dotnet_diagnostic.SA1200.severity=silent
 
 # IDE0065: Неправильно расположенная директива using
 csharp_using_directive_placement = outside_namespace
+
+# SA1400: Access modifier should be declared
+dotnet_diagnostic.SA1400.severity = none
