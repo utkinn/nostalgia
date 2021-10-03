@@ -3,9 +3,15 @@ using Nostalgia.Proxies;
 
 namespace Nostalgia
 {
-    internal class Nostalgia
+    /// <summary>
+    /// Nostalgia composition root and entry point.
+    /// </summary>
+    internal static class Nostalgia
     {
-        public void Start()
+        /// <summary>
+        /// Initializes Nostalgia internal dependencies, then discovers addons and runs their autorun code.
+        /// </summary>
+        public static void Start()
         {
             var host = new Host();
             var logger = new Logger();

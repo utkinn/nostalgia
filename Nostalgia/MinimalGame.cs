@@ -6,7 +6,7 @@ namespace Nostalgia
     {
         public MinimalGame()
         {
-            new Nostalgia().Start();
+            Nostalgia.Start();
         }
 
         public override void ClientJoined(Client client)
