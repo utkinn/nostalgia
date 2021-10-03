@@ -21,7 +21,7 @@ namespace Nostalgia.LuaModules
             this.logger = logger;  // TODO: Use separate loggers for each addon
         }
 
-        private delegate void PrintDelegate(params object[] args);
+        public delegate void PrintDelegate(params object[] args);
 
         /// <summary>
         /// Inserts symbols into the Lua global namespace.
@@ -36,7 +36,7 @@ namespace Nostalgia.LuaModules
 
         private void Print(params object[] args)
         {
-            logger.Info(string.Join('\t', args));
+            logger.Info(string.Join('\t', args) + "\n");
         }
 
         private void Msg(params object[] args)
@@ -56,7 +56,7 @@ namespace Nostalgia.LuaModules
 
         private void MsgN(params object[] args)
         {
-            Msg(args, "\n");
+            Msg(string.Join(string.Empty, args), "\n");
         }
     }
 }

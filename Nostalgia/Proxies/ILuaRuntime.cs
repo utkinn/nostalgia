@@ -10,7 +10,7 @@ namespace Nostalgia.Proxies
         /// <summary>
         /// Gets the table with global Lua symbols.
         /// </summary>
-        Table Globals { get; }
+        public ITable Globals { get; }
 
         /// <summary>
         /// Executes Lua code.

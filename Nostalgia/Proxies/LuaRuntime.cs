@@ -10,7 +10,7 @@ namespace Nostalgia.Proxies
         private readonly Script script = new();
 
         /// <inheritdoc/>
-        public Table Globals => script.Globals;
+        public ITable Globals => new Table(script.Globals);
 
         /// <inheritdoc/>
         public virtual void DoString(string code) => script.DoString(code);
