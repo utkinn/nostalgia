@@ -27,7 +27,7 @@ namespace Nostalgia.LuaModules
         /// <param name="runtime">Lua runtime to operate on.</param>
         public void Init(ILuaRuntime runtime)
         {
-            new RealmsModule(host).Init(runtime);
+            new GlobalConstantsModule(host).Init(runtime);
             new ConsoleModule(logger).Init(runtime);
         }
     }
